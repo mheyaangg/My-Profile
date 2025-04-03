@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/contactstyle.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/tablet.css">
+</head>
+<body>
+    <nav>
+        <ul class="site-identity">
+            <img src="images/cute&comfi_logo.html.png" alt="site-logo">
+            <img src="images/menu.png" class="burger-menu-btn" alt="" onclick="toggleMenu()">
+            <li class="btn"><a href="index.html">Home</a></li>
+            <li class="btn"><a href="index.html">About</a></li>
+            <li class="btn"><a href="contact.html">Contact Us</a></li> 
+        </ul>
+    </nav>
+
+<div class="menu-container-mobile" id="menu">
+    <img class="close-btn" src="images/close.png" alt="Close" onclick="toggleMenu()">
+    <ul class="nav-menu-mobile">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+</div>
+
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p class="form-quote"> We'll come back to you soon! </p>
+        <form id="contactForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required>
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+        
+        <div id="submittedData" class="hidden">
+            <h3>Submitted Information</h3>
+            <p><strong>First Name:</strong> <span id="displayFirstName"></span></p>
+            <p><strong>Last Name:</strong> <span id="displayLastName"></span></p>
+            <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+            <p><strong>Message:</strong> <span id="displayMessage"></span></p>
+            <button id="backButton">Back</button>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
